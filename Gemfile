@@ -10,13 +10,12 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-#gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-
 gem "importmap-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
@@ -77,22 +76,3 @@ gem 'devise'
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem "bulma-rails"
-
-# group :development, :test do
-#   gem 'sqlite3',  '1.3.13'
-#   gem 'byebug', '9.0.6', platform: :mri
-# end
-
-# group :development do
-#   gem 'web-console', '3.5.1'
-#   gem 'listen', '3.1.5'
-#   gem 'spring', '2.0.2'
-
-#   gem 'spring-watcher-listen', '2.0.1'
-# end
-
-#=======追加=========
-group :production do
-  gem 'pg','0.20.0'
-end
-#====================
